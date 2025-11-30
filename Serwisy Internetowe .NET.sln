@@ -2,6 +2,8 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataGenerator", "DataGenerator\DataGenerator.csproj", "{CF3C713F-BFC7-4441-BE80-C86D82FDA7F9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MainApplication", "MainApplication\MainApplication.csproj", "{8A771ADF-559A-4813-88CD-5B5D6F48064B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +14,9 @@ Global
 		{CF3C713F-BFC7-4441-BE80-C86D82FDA7F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CF3C713F-BFC7-4441-BE80-C86D82FDA7F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CF3C713F-BFC7-4441-BE80-C86D82FDA7F9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8A771ADF-559A-4813-88CD-5B5D6F48064B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A771ADF-559A-4813-88CD-5B5D6F48064B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A771ADF-559A-4813-88CD-5B5D6F48064B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8A771ADF-559A-4813-88CD-5B5D6F48064B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

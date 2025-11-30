@@ -1,0 +1,113 @@
+﻿@page "{type?}"
+@model MainApplication.Pages.SensorDataModel
+
+<h2>Dane sensora: @Model.FilterType</h2>
+
+@if (Model.SensorDataList.Count == 0)
+{
+    <p>Brak danych dla tego typu sensora.</p>
+}
+else
+{
+    <button id="btnExportJson" class="btn btn-primary mb-2">Eksportuj JSON</button>
+    <button id="btnExportCsv" class="btn btn-secondary mb-2">Eksportuj CSV</button>
+    
+    <table id="myTable" class="display">
+        <thead>
+        <tr>
+            <th><input type="text" placeholder="Szukaj SensorId"/></th>
+            <th></th>
+            <th><input type="text" placeholder="Szukaj Value"/></th>
+            <th><input type="text" placeholder="Szukaj Timestamp"/></th>
+        </tr>
+        <tr>
+            <th>SensorId</th>
+            <th>Type</th>
+            <th>Value</th>
+            <th>Timestamp</th>
+        </tr>
+        </thead>
+        <tbody>
+        @foreach (var item in Model.SensorDataList)
+        {
+            <tr>
+                <td>@item.SensorId</td>
+                <td>@item.Type</td>
+                <td>@item.Value</td>
+                <td>@DateTimeOffset.FromUnixTimeMilliseconds(item.Timestamp).ToLocalTime().ToString("yyyy-MM-dd HH:mm:ss.fff")</td>
+            </tr>
+        }
+        </tbody>
+    </table>
+
+    @section Scripts {
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
+        <link rel="stylesheet" href="https://cdn.datatables.net/1.13.4/css/jquery.dataTables.min.css"/>
+
+        <script>
+            $(document).ready(function () {
+                var table = $('#myTable').DataTable({
+                    dom: 'lrtip',
+                    order: [[3, 'desc']],
+                    columnDefs: [{targets: [1], orderable: false}],
+                });
+
+                $('#myTable thead tr:eq(0) th input').on('keyup change', function (e) {
+                    // ignore Enter key
+                    if (e.keyCode === 13) {
+                        e.preventDefault();
+                        return;
+                    }
+                    var i = $(this).parent().index();
+                    if (table.column(i).search() !== this.value) {
+                        table.column(i).search(this.value).draw();
+                    }
+                });
+
+                $('#myTable thead tr:eq(0) th input').on('keydown', function (e) {
+                    if (e.keyCode === 13) {
+                        e.preventDefault();
+                        var i = $(this).parent().index();
+                        table.column(i).search(this.value).draw();
+                    }
+                });
+                
+                $('#btnExportJson').click(function () {
+                    var table = $('#myTable').DataTable();
+                    var data = table.rows({ search: 'applied' }).data().toArray();
+                    var json = JSON.stringify(data);
+                    var blob = new Blob([json], { type: "application/json" });
+                    var url = URL.createObjectURL(blob);
+
+                    var a = document.createElement('a');
+                    a.href = url;
+                    a.download = 'data.json';
+                    a.click();
+                    URL.revokeObjectURL(url);
+                });
+                
+                $('#btnExportCsv').click(function () {
+                    var table = $('#myTable').DataTable();
+                    var data = table.rows({ search: 'applied' }).data().toArray();
+
+                    var csv = 'SensorId,Type,Value,Timestamp\n';
+
+                    data.forEach(function(row) {
+                        csv += `"${row[0]}","${row[1]}","${row[2]}","${row[3]}"\n`;
+                    });
+
+                    var blob = new Blob([csv], { type: "text/csv" });
+                    var url = URL.createObjectURL(blob);
+
+                    var a = document.createElement('a');
+                    a.href = url;
+                    a.download = 'data.csv';
+                    a.click();
+                    URL.revokeObjectURL(url);
+                });
+
+            });
+        </script>
+    }
+}
