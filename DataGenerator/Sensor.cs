@@ -1,7 +1,4 @@
-﻿using System.Text.Json;
-using MQTTnet;
-
-namespace DataGenerator;
+﻿namespace DataGenerator;
 
 public class Sensor(string sensorId, string type, MqttService mqttService)
 {
@@ -29,7 +26,7 @@ public class Sensor(string sensorId, string type, MqttService mqttService)
             SensorId,
             Type,
             Value = GenerateValue(),
-            Timestamp = DateTime.UtcNow
+            Timestamp = DateTimeOffset.UtcNow.ToUnixTimeMilliseconds()
         };
         
         var topic = $"sensors/{Type}/{SensorId}";

@@ -19,5 +19,5 @@ public class SensorData
     public string SensorId { get; set; }
     public string Type { get; set; }
     public double Value { get; set; }
-    public DateTime Timestamp { get; set; }
+    public long Timestamp { get; set; }
 }

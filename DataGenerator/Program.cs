@@ -4,6 +4,10 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddSingleton<MqttService>();
 builder.Services.AddControllers();
+builder.WebHost.ConfigureKestrel(options =>
+{
+    options.ListenLocalhost(5001);
+});
 
 var app = builder.Build();
 
@@ -36,6 +40,6 @@ async void StartSensorSending(Sensor sensor)
     while (true)
     {
         await sensor.PublishDataAsync();
-        await Task.Delay(rnd.Next(1000, 5000));
+        await Task.Delay(rnd.Next(3000, 8000));
     }
 }
