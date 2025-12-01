@@ -7,8 +7,14 @@ using Microsoft.AspNetCore.Mvc;
 
 [Route("api/[controller]")]
 [ApiController]
-public class SensorDataController(ISensorDataService service) : ControllerBase
+public class SensorDataController : ControllerBase
 {
+    private readonly ISensorDataService _sensorDataService;
+
+    public SensorDataController(ISensorDataService sensorDataService)
+    {
+        _sensorDataService = sensorDataService;
+    }
     [HttpGet("data")]
     public async Task<IActionResult> GetTableData(
         [FromQuery] string type,
@@ -53,7 +59,7 @@ public class SensorDataController(ISensorDataService service) : ControllerBase
         string filterTimestampBefore,
         string filterTimestampAfter)
     {
-        var data = await service.GetByTypeAsync(type);
+        var data = await _sensorDataService.GetByTypeAsync(type);
         
         if (!string.IsNullOrEmpty(filterSensorId))
             data = data.Where(d => d.SensorId.Contains(filterSensorId, StringComparison.OrdinalIgnoreCase)).ToList();
@@ -73,5 +79,11 @@ public class SensorDataController(ISensorDataService service) : ControllerBase
             ? data.OrderByDescending(keySelector).ToList()
             : data.OrderBy(keySelector).ToList();
         return data;
+    }
+    [HttpGet("dashboard")]
+    public async Task<ActionResult<List<SensorDashboardDto>>> GetDashboard()
+    {
+        var data = await _sensorDataService.GetDashboardAsync();
+        return Ok(data);
     }
 }

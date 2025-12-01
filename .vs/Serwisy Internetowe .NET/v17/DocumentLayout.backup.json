@@ -1,0 +1,126 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\ginko\\OneDrive\\Pulpit\\Programowanko\\studia\\semestr 7\\net\\SerwisyInternetowe.NET\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{CF3C713F-BFC7-4441-BE80-C86D82FDA7F9}|DataGenerator\\DataGenerator.csproj|c:\\users\\ginko\\onedrive\\pulpit\\programowanko\\studia\\semestr 7\\net\\serwisyinternetowe.net\\datagenerator\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{CF3C713F-BFC7-4441-BE80-C86D82FDA7F9}|DataGenerator\\DataGenerator.csproj|solutionrelative:datagenerator\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A771ADF-559A-4813-88CD-5B5D6F48064B}|MainApplication\\MainApplication.csproj|c:\\users\\ginko\\onedrive\\pulpit\\programowanko\\studia\\semestr 7\\net\\serwisyinternetowe.net\\mainapplication\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{8A771ADF-559A-4813-88CD-5B5D6F48064B}|MainApplication\\MainApplication.csproj|solutionrelative:mainapplication\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{537D485C-061D-4580-8ECD-98F6322DC6BA}|Solution Items{537D485C-061D-4580-8ECD-98F6322DC6BA}|C:\\Users\\ginko\\OneDrive\\Pulpit\\Programowanko\\studia\\semestr 7\\net\\SerwisyInternetowe.NET\\docker-compose.yml||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{537D485C-061D-4580-8ECD-98F6322DC6BA}|Solution Items{537D485C-061D-4580-8ECD-98F6322DC6BA}|solutionrelative:docker-compose.yml||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{537D485C-061D-4580-8ECD-98F6322DC6BA}|Solution Items{537D485C-061D-4580-8ECD-98F6322DC6BA}|C:\\Users\\ginko\\OneDrive\\Pulpit\\Programowanko\\studia\\semestr 7\\net\\SerwisyInternetowe.NET\\mosquitto.conf||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{537D485C-061D-4580-8ECD-98F6322DC6BA}|Solution Items{537D485C-061D-4580-8ECD-98F6322DC6BA}|solutionrelative:mosquitto.conf||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF3C713F-BFC7-4441-BE80-C86D82FDA7F9}|DataGenerator\\DataGenerator.csproj|c:\\users\\ginko\\onedrive\\pulpit\\programowanko\\studia\\semestr 7\\net\\serwisyinternetowe.net\\datagenerator\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF3C713F-BFC7-4441-BE80-C86D82FDA7F9}|DataGenerator\\DataGenerator.csproj|solutionrelative:datagenerator\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A771ADF-559A-4813-88CD-5B5D6F48064B}|MainApplication\\MainApplication.csproj|c:\\users\\ginko\\onedrive\\pulpit\\programowanko\\studia\\semestr 7\\net\\serwisyinternetowe.net\\mainapplication\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8A771ADF-559A-4813-88CD-5B5D6F48064B}|MainApplication\\MainApplication.csproj|solutionrelative:mainapplication\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "docker-compose.yml",
+              "DocumentMoniker": "C:\\Users\\ginko\\OneDrive\\Pulpit\\Programowanko\\studia\\semestr 7\\net\\SerwisyInternetowe.NET\\docker-compose.yml",
+              "RelativeDocumentMoniker": "docker-compose.yml",
+              "ToolTip": "C:\\Users\\ginko\\OneDrive\\Pulpit\\Programowanko\\studia\\semestr 7\\net\\SerwisyInternetowe.NET\\docker-compose.yml",
+              "RelativeToolTip": "docker-compose.yml",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAkwB0AAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003775|",
+              "WhenOpened": "2025-12-01T12:07:29.292Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "mosquitto.conf",
+              "DocumentMoniker": "C:\\Users\\ginko\\OneDrive\\Pulpit\\Programowanko\\studia\\semestr 7\\net\\SerwisyInternetowe.NET\\mosquitto.conf",
+              "RelativeDocumentMoniker": "mosquitto.conf",
+              "ToolTip": "C:\\Users\\ginko\\OneDrive\\Pulpit\\Programowanko\\studia\\semestr 7\\net\\SerwisyInternetowe.NET\\mosquitto.conf",
+              "RelativeToolTip": "mosquitto.conf",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-12-01T12:06:38.53Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Dockerfile",
+              "DocumentMoniker": "C:\\Users\\ginko\\OneDrive\\Pulpit\\Programowanko\\studia\\semestr 7\\net\\SerwisyInternetowe.NET\\DataGenerator\\Dockerfile",
+              "RelativeDocumentMoniker": "DataGenerator\\Dockerfile",
+              "ToolTip": "C:\\Users\\ginko\\OneDrive\\Pulpit\\Programowanko\\studia\\semestr 7\\net\\SerwisyInternetowe.NET\\DataGenerator\\Dockerfile",
+              "RelativeToolTip": "DataGenerator\\Dockerfile",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-12-01T12:05:44.512Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Dockerfile",
+              "DocumentMoniker": "C:\\Users\\ginko\\OneDrive\\Pulpit\\Programowanko\\studia\\semestr 7\\net\\SerwisyInternetowe.NET\\MainApplication\\Dockerfile",
+              "RelativeDocumentMoniker": "MainApplication\\Dockerfile",
+              "ToolTip": "C:\\Users\\ginko\\OneDrive\\Pulpit\\Programowanko\\studia\\semestr 7\\net\\SerwisyInternetowe.NET\\MainApplication\\Dockerfile",
+              "RelativeToolTip": "MainApplication\\Dockerfile",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-12-01T12:05:06.683Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\ginko\\OneDrive\\Pulpit\\Programowanko\\studia\\semestr 7\\net\\SerwisyInternetowe.NET\\DataGenerator\\Program.cs",
+              "RelativeDocumentMoniker": "DataGenerator\\Program.cs",
+              "ToolTip": "C:\\Users\\ginko\\OneDrive\\Pulpit\\Programowanko\\studia\\semestr 7\\net\\SerwisyInternetowe.NET\\DataGenerator\\Program.cs",
+              "RelativeToolTip": "DataGenerator\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-01T12:03:19.248Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\ginko\\OneDrive\\Pulpit\\Programowanko\\studia\\semestr 7\\net\\SerwisyInternetowe.NET\\MainApplication\\Program.cs",
+              "RelativeDocumentMoniker": "MainApplication\\Program.cs",
+              "ToolTip": "C:\\Users\\ginko\\OneDrive\\Pulpit\\Programowanko\\studia\\semestr 7\\net\\SerwisyInternetowe.NET\\MainApplication\\Program.cs",
+              "RelativeToolTip": "MainApplication\\Program.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAADEAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-01T12:00:53.702Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

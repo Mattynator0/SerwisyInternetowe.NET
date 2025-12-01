@@ -1,18 +1,20 @@
 ﻿using DataGenerator;
 
 var builder = WebApplication.CreateBuilder(args);
+var mqttHost = builder.Configuration["Mqtt:Host"] ?? "mqtt";
+var mqttPort = builder.Configuration.GetValue<int?>("Mqtt:Port") ?? 1883;
 
 builder.Services.AddSingleton<MqttService>();
 builder.Services.AddControllers();
 builder.WebHost.ConfigureKestrel(options =>
 {
-    options.ListenLocalhost(5001);
+    options.ListenAnyIP(5001);
 });
 
 var app = builder.Build();
 
 var mqttService = app.Services.GetRequiredService<MqttService>();
-await mqttService.ConnectAsync("localhost", 1883);
+await mqttService.ConnectAsync(mqttHost, mqttPort);
 
 app.MapControllers();
 
