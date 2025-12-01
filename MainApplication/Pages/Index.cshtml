@@ -9,7 +9,69 @@
 </head>
 <body>
 <div>
-    Dashboard here
+        <h1>Dashboard sensorów</h1>
+
+        <p>
+            Ostatnia wartość i średnia z ostatnich 100 komunikatów dla każdego sensora.
+            Dane odświeżają się automatycznie co 0,5 sekundy.
+        </p>
+
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Sensor ID</th>
+                    <th>Typ</th>
+                    <th>Ostatnia wartość</th>
+                    <th>Czas ostatniego pomiaru</th>
+                    <th>Średnia z ostatnich 100</th>
+                </tr>
+            </thead>
+            <tbody id="dashboard-body">
+
+            </tbody>
+        </table>
+
+        @section Scripts {
+            <script>
+                async function loadDashboard() {
+                    try {
+                        const response = await fetch('/api/SensorData/dashboard');
+
+                        if (!response.ok) {
+                            console.error('Błąd podczas pobierania danych dashboardu:', response.status);
+                            return;
+                        }
+
+                        const data = await response.json();
+                        const tbody = document.getElementById('dashboard-body');
+                        tbody.innerHTML = '';
+
+                        data.forEach(item => {
+                            const tr = document.createElement('tr');
+
+                            const date = new Date(item.lastTimestamp);
+                            const dateString = date.toLocaleString();
+
+                            tr.innerHTML = `
+                                <td>${item.sensorId}</td>
+                                <td>${item.type}</td>
+                                <td>${item.lastValue.toFixed(2)}</td>
+                                <td>${dateString}</td>
+                                <td>${item.averageLast100.toFixed(2)}</td>
+                            `;
+
+                            tbody.appendChild(tr);
+                        });
+                    } catch (e) {
+                        console.error('Wyjątek podczas ładowania dashboardu:', e);
+                    }
+                }
+
+                window.addEventListener('load', loadDashboard);
+
+                setInterval(loadDashboard, 500);
+            </script>
+        }
 </div>
 </body>
 </html>
