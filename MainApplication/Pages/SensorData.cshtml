@@ -11,14 +11,21 @@ else
 {
     <button id="btnExportJson" class="btn btn-primary mb-2">Eksportuj JSON</button>
     <button id="btnExportCsv" class="btn btn-secondary mb-2">Eksportuj CSV</button>
-    
+
+    <div>
+        <label>Timestamp od:</label>
+        <input type="datetime-local" id="timestampAfter"/>
+        <label>Timestamp do:</label>
+        <input type="datetime-local" id="timestampBefore"/>
+    </div>
+
     <table id="myTable" class="display">
         <thead>
         <tr>
             <th><input type="text" placeholder="Szukaj SensorId"/></th>
             <th></th>
             <th></th>
-            <th><input type="text" placeholder="Szukaj Timestamp"/></th>
+            <th></th>
         </tr>
         <tr>
             <th>SensorId</th>
@@ -34,7 +41,7 @@ else
                 <td>@item.SensorId</td>
                 <td>@item.Type</td>
                 <td>@item.Value</td>
-                <td>@DateTimeOffset.FromUnixTimeMilliseconds(item.Timestamp).ToLocalTime().ToString("yyyy-MM-dd HH:mm:ss.fff")</td>
+                <td data-timestamp="@item.Timestamp">@DateTimeOffset.FromUnixTimeMilliseconds(item.Timestamp).ToLocalTime().ToString("yyyy-MM-dd HH:mm:ss.fff")</td>
             </tr>
         }
         </tbody>
@@ -50,34 +57,52 @@ else
                 var table = $('#myTable').DataTable({
                     dom: 'lrtip',
                     order: [[3, 'desc']],
-                    columnDefs: [{targets: [1], orderable: false}],
+                    columnDefs: [{targets: [1], orderable: false}]
                 });
 
                 $('#myTable thead tr:eq(0) th input').on('keyup change', function (e) {
-                    // ignore Enter key
-                    if (e.keyCode === 13) {
-                        e.preventDefault();
-                        return;
-                    }
                     var i = $(this).parent().index();
                     if (table.column(i).search() !== this.value) {
                         table.column(i).search(this.value).draw();
                     }
                 });
 
-                $('#myTable thead tr:eq(0) th input').on('keydown', function (e) {
-                    if (e.keyCode === 13) {
+                $.fn.dataTable.ext.search.push(
+                    function (settings, data, dataIndex) {
+                        var min = $('#timestampAfter').val() ? new Date($('#timestampAfter').val()).getTime() : null;
+                        var max = $('#timestampBefore').val() ? new Date($('#timestampBefore').val()).getTime() : null;
+
+                        var timestamp = parseInt($('td', table.row(dataIndex).node()).eq(3).attr('data-timestamp'), 10);
+
+                        if (
+                            (min === null && max === null) ||
+                            (min === null && timestamp <= max) ||
+                            (min <= timestamp && max === null) ||
+                            (min <= timestamp && timestamp <= max)
+                        ) {
+                            return true;
+                        }
+                        return false;
+                    }
+                );
+
+                $('#timestampAfter, #timestampBefore').on('change', function () {
+                    table.draw();
+                });
+
+                $('#timestampAfter, #timestampBefore').on('keydown', function (e) {
+                    if (e.key === "Backspace" || e.key === "Delete") {
                         e.preventDefault();
-                        var i = $(this).parent().index();
-                        table.column(i).search(this.value).draw();
+                        $(this).val('');
+                        $('#myTable').DataTable().draw();
                     }
                 });
-                
+
                 $('#btnExportJson').click(function () {
                     var table = $('#myTable').DataTable();
-                    var data = table.rows({ search: 'applied' }).data().toArray();
+                    var data = table.rows({search: 'applied'}).data().toArray();
                     var json = JSON.stringify(data);
-                    var blob = new Blob([json], { type: "application/json" });
+                    var blob = new Blob([json], {type: "application/json"});
                     var url = URL.createObjectURL(blob);
 
                     var a = document.createElement('a');
@@ -86,18 +111,18 @@ else
                     a.click();
                     URL.revokeObjectURL(url);
                 });
-                
+
                 $('#btnExportCsv').click(function () {
                     var table = $('#myTable').DataTable();
-                    var data = table.rows({ search: 'applied' }).data().toArray();
+                    var data = table.rows({search: 'applied'}).data().toArray();
 
                     var csv = 'SensorId,Type,Value,Timestamp\n';
 
-                    data.forEach(function(row) {
+                    data.forEach(function (row) {
                         csv += `"${row[0]}","${row[1]}","${row[2]}","${row[3]}"\n`;
                     });
 
-                    var blob = new Blob([csv], { type: "text/csv" });
+                    var blob = new Blob([csv], {type: "text/csv"});
                     var url = URL.createObjectURL(blob);
 
                     var a = document.createElement('a');
