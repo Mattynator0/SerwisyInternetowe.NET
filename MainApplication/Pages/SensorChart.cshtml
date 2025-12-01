@@ -1,0 +1,90 @@
+﻿@page
+@model MainApplication.Pages.SensorChartModel
+
+<h2>Wykres danych sensora</h2>
+
+<div>
+    <label>Typ sensora:</label>
+    <select id="sensorTypeSelect">
+        @foreach (var type in Model.AvailableTypes)
+        {
+            <option value="@type">@type</option>
+        }
+    </select>
+
+    <label>SensorId:</label>
+    <input type="text" id="sensorIdFilter" placeholder="Filtruj po SensorId"/>
+
+    <label>Timestamp od:</label>
+    <input type="datetime-local" id="timestampAfter"/>
+
+    <label>Timestamp do:</label>
+    <input type="datetime-local" id="timestampBefore"/>
+
+    <button id="btnLoadChart">Załaduj wykres</button>
+</div>
+
+<canvas id="sensorChart" width="800" height="400"></canvas>
+
+@section Scripts {
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        let chart = null;
+
+        function parseDateToTimestamp(dateStr) {
+            return dateStr ? new Date(dateStr).getTime() : null;
+        }
+
+        $('#timestampAfter, #timestampBefore').on('keydown', function (e) {
+            if (e.key === "Backspace" || e.key === "Delete") {
+                e.preventDefault();
+                $(this).val('');
+                $('#myTable').DataTable().draw();
+            }
+        });
+
+        $('#btnLoadChart').on('click', function () {
+            const type = $('#sensorTypeSelect').val();
+            const sensorId = $('#sensorIdFilter').val();
+            const fromTimestamp = parseDateToTimestamp($('#timestampAfter').val());
+            const toTimestamp = parseDateToTimestamp($('#timestampBefore').val());
+
+            $.ajax({
+                url: '/api/SensorData/data',
+                data: {
+                    type: type,
+                    filterSensorId: sensorId,
+                    filterTimestampAfter: fromTimestamp,
+                    filterTimestampBefore: toTimestamp
+                },
+                success: function (data) {
+                    const labels = data.map(d => new Date(d.timestamp).toLocaleString());
+                    const values = data.map(d => d.value);
+
+                    const ctx = document.getElementById('sensorChart').getContext('2d');
+                    if (chart) {
+                        chart.destroy();
+                    }
+                    chart = new Chart(ctx, {
+                        type: 'line',
+                        data: {
+                            labels: labels,
+                            datasets: [{
+                                label: `Wartości sensorów: ${type}`,
+                                data: values,
+                                borderColor: 'rgba(75, 192, 192, 1)'
+                            }]
+                        },
+                        options: {
+                            scales: {
+                                x: {title: {display: true, text: 'Timestamp'}},
+                                y: {title: {display: true, text: 'Value'}}
+                            }
+                        }
+                    });
+                }
+            });
+        });
+    </script>
+}
