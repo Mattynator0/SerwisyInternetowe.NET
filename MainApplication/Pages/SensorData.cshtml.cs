@@ -4,6 +4,7 @@ namespace MainApplication.Pages;
 
 public class SensorDataModel(IHttpClientFactory httpClientFactory) : PageModel
 {
+    public List<string> AvailableTypes { get; set; } = ["light", "temperature", "air-quality", "energy"];
     public List<SensorData> SensorDataList { get; set; }
     public string FilterType { get; set; }
 

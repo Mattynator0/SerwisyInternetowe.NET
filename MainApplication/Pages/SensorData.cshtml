@@ -3,14 +3,30 @@
 
 <h2>Dane sensora: @Model.FilterType</h2>
 
-@if (Model.SensorDataList.Count == 0)
+<div style="margin-bottom: 1rem;">
+    <label for="sensorTypeSelect">Wybierz typ sensora:</label>
+    <select id="sensorTypeSelect">
+        @foreach(var sensorType in Model.AvailableTypes)
+        {
+            <option value="@sensorType" @(sensorType == Model.FilterType ? "selected" : "")>@sensorType</option>
+        }
+    </select>
+</div>
+
+@if (string.IsNullOrEmpty(Model.FilterType))
+{
+    <p>Wybierz typ sensora</p>
+}
+else if (Model.SensorDataList.Count == 0)
 {
     <p>Brak danych dla tego typu sensora.</p>
 }
 else
 {
-    <button id="btnExportJson" class="btn btn-primary mb-2">Eksportuj JSON</button>
-    <button id="btnExportCsv" class="btn btn-secondary mb-2">Eksportuj CSV</button>
+    <div style="float: right;">
+        <button id="btnExportJson" class="btn btn-primary mb-2">Eksportuj JSON</button>
+        <button id="btnExportCsv" class="btn btn-secondary mb-2">Eksportuj CSV</button>
+    </div>
 
     <div>
         <label>Timestamp od:</label>
@@ -53,6 +69,12 @@ else
         <link rel="stylesheet" href="https://cdn.datatables.net/1.13.4/css/jquery.dataTables.min.css"/>
 
         <script>
+            document.getElementById('sensorTypeSelect').addEventListener('change', function() {
+                var selectedType = this.value;
+                var url = '@Url.Page(null, null, new { type = "__type__" })'.replace('__type__', encodeURIComponent(selectedType));
+                window.location.href = url;
+            });
+            
             $(document).ready(function () {
                 var table = $('#myTable').DataTable({
                     dom: 'lrtip',
