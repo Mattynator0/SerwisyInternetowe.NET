@@ -3,6 +3,42 @@
   "WorkspaceRootPath": "C:\\Users\\ginko\\OneDrive\\Pulpit\\Programowanko\\studia\\semestr 7\\net\\SerwisyInternetowe.NET\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{8A771ADF-559A-4813-88CD-5B5D6F48064B}|MainApplication\\MainApplication.csproj|c:\\users\\ginko\\onedrive\\pulpit\\programowanko\\studia\\semestr 7\\net\\serwisyinternetowe.net\\mainapplication\\pages\\tokenbalances.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8A771ADF-559A-4813-88CD-5B5D6F48064B}|MainApplication\\MainApplication.csproj|solutionrelative:mainapplication\\pages\\tokenbalances.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A771ADF-559A-4813-88CD-5B5D6F48064B}|MainApplication\\MainApplication.csproj|c:\\users\\ginko\\onedrive\\pulpit\\programowanko\\studia\\semestr 7\\net\\serwisyinternetowe.net\\mainapplication\\pages\\tokenbalances.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8A771ADF-559A-4813-88CD-5B5D6F48064B}|MainApplication\\MainApplication.csproj|solutionrelative:mainapplication\\pages\\tokenbalances.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A771ADF-559A-4813-88CD-5B5D6F48064B}|MainApplication\\MainApplication.csproj|c:\\users\\ginko\\onedrive\\pulpit\\programowanko\\studia\\semestr 7\\net\\serwisyinternetowe.net\\mainapplication\\blockchaincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8A771ADF-559A-4813-88CD-5B5D6F48064B}|MainApplication\\MainApplication.csproj|solutionrelative:mainapplication\\blockchaincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A771ADF-559A-4813-88CD-5B5D6F48064B}|MainApplication\\MainApplication.csproj|c:\\users\\ginko\\onedrive\\pulpit\\programowanko\\studia\\semestr 7\\net\\serwisyinternetowe.net\\mainapplication\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8A771ADF-559A-4813-88CD-5B5D6F48064B}|MainApplication\\MainApplication.csproj|solutionrelative:mainapplication\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A771ADF-559A-4813-88CD-5B5D6F48064B}|MainApplication\\MainApplication.csproj|c:\\users\\ginko\\onedrive\\pulpit\\programowanko\\studia\\semestr 7\\net\\serwisyinternetowe.net\\mainapplication\\mqttmongoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8A771ADF-559A-4813-88CD-5B5D6F48064B}|MainApplication\\MainApplication.csproj|solutionrelative:mainapplication\\mqttmongoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A771ADF-559A-4813-88CD-5B5D6F48064B}|MainApplication\\MainApplication.csproj|c:\\users\\ginko\\onedrive\\pulpit\\programowanko\\studia\\semestr 7\\net\\serwisyinternetowe.net\\mainapplication\\blockchain\\blockchainrewardservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8A771ADF-559A-4813-88CD-5B5D6F48064B}|MainApplication\\MainApplication.csproj|solutionrelative:mainapplication\\blockchain\\blockchainrewardservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A771ADF-559A-4813-88CD-5B5D6F48064B}|MainApplication\\MainApplication.csproj|c:\\users\\ginko\\onedrive\\pulpit\\programowanko\\studia\\semestr 7\\net\\serwisyinternetowe.net\\mainapplication\\blockchain\\iblockchainrewardservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8A771ADF-559A-4813-88CD-5B5D6F48064B}|MainApplication\\MainApplication.csproj|solutionrelative:mainapplication\\blockchain\\iblockchainrewardservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A771ADF-559A-4813-88CD-5B5D6F48064B}|MainApplication\\MainApplication.csproj|c:\\users\\ginko\\onedrive\\pulpit\\programowanko\\studia\\semestr 7\\net\\serwisyinternetowe.net\\mainapplication\\blockchain\\sensortokenbalancedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8A771ADF-559A-4813-88CD-5B5D6F48064B}|MainApplication\\MainApplication.csproj|solutionrelative:mainapplication\\blockchain\\sensortokenbalancedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A771ADF-559A-4813-88CD-5B5D6F48064B}|MainApplication\\MainApplication.csproj|c:\\users\\ginko\\onedrive\\pulpit\\programowanko\\studia\\semestr 7\\net\\serwisyinternetowe.net\\mainapplication\\mainapplication.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{8A771ADF-559A-4813-88CD-5B5D6F48064B}|MainApplication\\MainApplication.csproj|solutionrelative:mainapplication\\mainapplication.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{8A771ADF-559A-4813-88CD-5B5D6F48064B}|MainApplication\\MainApplication.csproj|c:\\users\\ginko\\onedrive\\pulpit\\programowanko\\studia\\semestr 7\\net\\serwisyinternetowe.net\\mainapplication\\sensordataservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8A771ADF-559A-4813-88CD-5B5D6F48064B}|MainApplication\\MainApplication.csproj|solutionrelative:mainapplication\\sensordataservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -15,12 +51,36 @@
       "RelativeMoniker": "D:0:0:{8A771ADF-559A-4813-88CD-5B5D6F48064B}|MainApplication\\MainApplication.csproj|solutionrelative:mainapplication\\sensordata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8A771ADF-559A-4813-88CD-5B5D6F48064B}|MainApplication\\MainApplication.csproj|c:\\users\\ginko\\onedrive\\pulpit\\programowanko\\studia\\semestr 7\\net\\serwisyinternetowe.net\\mainapplication\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8A771ADF-559A-4813-88CD-5B5D6F48064B}|MainApplication\\MainApplication.csproj|solutionrelative:mainapplication\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8A771ADF-559A-4813-88CD-5B5D6F48064B}|MainApplication\\MainApplication.csproj|c:\\users\\ginko\\onedrive\\pulpit\\programowanko\\studia\\semestr 7\\net\\serwisyinternetowe.net\\mainapplication\\models\\sensordashboarddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8A771ADF-559A-4813-88CD-5B5D6F48064B}|MainApplication\\MainApplication.csproj|solutionrelative:mainapplication\\models\\sensordashboarddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8A771ADF-559A-4813-88CD-5B5D6F48064B}|MainApplication\\MainApplication.csproj|c:\\users\\ginko\\onedrive\\pulpit\\programowanko\\studia\\semestr 7\\net\\serwisyinternetowe.net\\mainapplication\\mqttmongoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8A771ADF-559A-4813-88CD-5B5D6F48064B}|MainApplication\\MainApplication.csproj|solutionrelative:mainapplication\\mqttmongoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8A771ADF-559A-4813-88CD-5B5D6F48064B}|MainApplication\\MainApplication.csproj|c:\\users\\ginko\\onedrive\\pulpit\\programowanko\\studia\\semestr 7\\net\\serwisyinternetowe.net\\mainapplication\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{8A771ADF-559A-4813-88CD-5B5D6F48064B}|MainApplication\\MainApplication.csproj|solutionrelative:mainapplication\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5894E714-DBE2-4F07-B872-3B563F6C4131}|NewFolder1{5894E714-DBE2-4F07-B872-3B563F6C4131}|C:\\Users\\ginko\\OneDrive\\Pulpit\\Programowanko\\studia\\semestr 7\\net\\SerwisyInternetowe.NET\\SensorToken.sol||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{5894E714-DBE2-4F07-B872-3B563F6C4131}|NewFolder1{5894E714-DBE2-4F07-B872-3B563F6C4131}|solutionrelative:SensorToken.sol||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{537D485C-061D-4580-8ECD-98F6322DC6BA}|Solution Items{537D485C-061D-4580-8ECD-98F6322DC6BA}|C:\\Users\\ginko\\OneDrive\\Pulpit\\Programowanko\\studia\\semestr 7\\net\\SerwisyInternetowe.NET\\docker-compose.yml||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{537D485C-061D-4580-8ECD-98F6322DC6BA}|Solution Items{537D485C-061D-4580-8ECD-98F6322DC6BA}|solutionrelative:docker-compose.yml||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF3C713F-BFC7-4441-BE80-C86D82FDA7F9}|DataGenerator\\DataGenerator.csproj|c:\\users\\ginko\\onedrive\\pulpit\\programowanko\\studia\\semestr 7\\net\\serwisyinternetowe.net\\datagenerator\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{CF3C713F-BFC7-4441-BE80-C86D82FDA7F9}|DataGenerator\\DataGenerator.csproj|solutionrelative:datagenerator\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF3C713F-BFC7-4441-BE80-C86D82FDA7F9}|DataGenerator\\DataGenerator.csproj|c:\\users\\ginko\\onedrive\\pulpit\\programowanko\\studia\\semestr 7\\net\\serwisyinternetowe.net\\datagenerator\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF3C713F-BFC7-4441-BE80-C86D82FDA7F9}|DataGenerator\\DataGenerator.csproj|solutionrelative:datagenerator\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF3C713F-BFC7-4441-BE80-C86D82FDA7F9}|DataGenerator\\DataGenerator.csproj|c:\\users\\ginko\\onedrive\\pulpit\\programowanko\\studia\\semestr 7\\net\\serwisyinternetowe.net\\datagenerator\\sensor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF3C713F-BFC7-4441-BE80-C86D82FDA7F9}|DataGenerator\\DataGenerator.csproj|solutionrelative:datagenerator\\sensor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF3C713F-BFC7-4441-BE80-C86D82FDA7F9}|DataGenerator\\DataGenerator.csproj|c:\\users\\ginko\\onedrive\\pulpit\\programowanko\\studia\\semestr 7\\net\\serwisyinternetowe.net\\datagenerator\\sensorgenerationsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF3C713F-BFC7-4441-BE80-C86D82FDA7F9}|DataGenerator\\DataGenerator.csproj|solutionrelative:datagenerator\\sensorgenerationsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8A771ADF-559A-4813-88CD-5B5D6F48064B}|MainApplication\\MainApplication.csproj|c:\\users\\ginko\\onedrive\\pulpit\\programowanko\\studia\\semestr 7\\net\\serwisyinternetowe.net\\mainapplication\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
@@ -39,40 +99,16 @@
       "RelativeMoniker": "D:0:0:{8A771ADF-559A-4813-88CD-5B5D6F48064B}|MainApplication\\MainApplication.csproj|solutionrelative:mainapplication\\pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8A771ADF-559A-4813-88CD-5B5D6F48064B}|MainApplication\\MainApplication.csproj|c:\\users\\ginko\\onedrive\\pulpit\\programowanko\\studia\\semestr 7\\net\\serwisyinternetowe.net\\mainapplication\\models\\sensordashboarddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8A771ADF-559A-4813-88CD-5B5D6F48064B}|MainApplication\\MainApplication.csproj|solutionrelative:mainapplication\\models\\sensordashboarddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{CF3C713F-BFC7-4441-BE80-C86D82FDA7F9}|DataGenerator\\DataGenerator.csproj|c:\\users\\ginko\\onedrive\\pulpit\\programowanko\\studia\\semestr 7\\net\\serwisyinternetowe.net\\datagenerator\\sensorscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CF3C713F-BFC7-4441-BE80-C86D82FDA7F9}|DataGenerator\\DataGenerator.csproj|solutionrelative:datagenerator\\sensorscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CF3C713F-BFC7-4441-BE80-C86D82FDA7F9}|DataGenerator\\DataGenerator.csproj|c:\\users\\ginko\\onedrive\\pulpit\\programowanko\\studia\\semestr 7\\net\\serwisyinternetowe.net\\datagenerator\\sensor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CF3C713F-BFC7-4441-BE80-C86D82FDA7F9}|DataGenerator\\DataGenerator.csproj|solutionrelative:datagenerator\\sensor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CF3C713F-BFC7-4441-BE80-C86D82FDA7F9}|DataGenerator\\DataGenerator.csproj|c:\\users\\ginko\\onedrive\\pulpit\\programowanko\\studia\\semestr 7\\net\\serwisyinternetowe.net\\datagenerator\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CF3C713F-BFC7-4441-BE80-C86D82FDA7F9}|DataGenerator\\DataGenerator.csproj|solutionrelative:datagenerator\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CF3C713F-BFC7-4441-BE80-C86D82FDA7F9}|DataGenerator\\DataGenerator.csproj|c:\\users\\ginko\\onedrive\\pulpit\\programowanko\\studia\\semestr 7\\net\\serwisyinternetowe.net\\datagenerator\\mqttservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CF3C713F-BFC7-4441-BE80-C86D82FDA7F9}|DataGenerator\\DataGenerator.csproj|solutionrelative:datagenerator\\mqttservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CF3C713F-BFC7-4441-BE80-C86D82FDA7F9}|DataGenerator\\DataGenerator.csproj|c:\\users\\ginko\\onedrive\\pulpit\\programowanko\\studia\\semestr 7\\net\\serwisyinternetowe.net\\datagenerator\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{CF3C713F-BFC7-4441-BE80-C86D82FDA7F9}|DataGenerator\\DataGenerator.csproj|solutionrelative:datagenerator\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{537D485C-061D-4580-8ECD-98F6322DC6BA}|Solution Items{537D485C-061D-4580-8ECD-98F6322DC6BA}|C:\\Users\\ginko\\OneDrive\\Pulpit\\Programowanko\\studia\\semestr 7\\net\\SerwisyInternetowe.NET\\mosquitto.conf||{3B902123-F8A7-4915-9F01-361F908088D0}",
       "RelativeMoniker": "D:0:0:{537D485C-061D-4580-8ECD-98F6322DC6BA}|Solution Items{537D485C-061D-4580-8ECD-98F6322DC6BA}|solutionrelative:mosquitto.conf||{3B902123-F8A7-4915-9F01-361F908088D0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{537D485C-061D-4580-8ECD-98F6322DC6BA}|Solution Items{537D485C-061D-4580-8ECD-98F6322DC6BA}|C:\\Users\\ginko\\OneDrive\\Pulpit\\Programowanko\\studia\\semestr 7\\net\\SerwisyInternetowe.NET\\docker-compose.yml||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{537D485C-061D-4580-8ECD-98F6322DC6BA}|Solution Items{537D485C-061D-4580-8ECD-98F6322DC6BA}|solutionrelative:docker-compose.yml||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8A771ADF-559A-4813-88CD-5B5D6F48064B}|MainApplication\\MainApplication.csproj|c:\\users\\ginko\\onedrive\\pulpit\\programowanko\\studia\\semestr 7\\net\\serwisyinternetowe.net\\mainapplication\\mainapplication.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{8A771ADF-559A-4813-88CD-5B5D6F48064B}|MainApplication\\MainApplication.csproj|solutionrelative:mainapplication\\mainapplication.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     }
   ],
   "DocumentGroupContainers": [
@@ -82,76 +118,89 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "SensorData.cs",
-              "DocumentMoniker": "C:\\Users\\ginko\\OneDrive\\Pulpit\\Programowanko\\studia\\semestr 7\\net\\SerwisyInternetowe.NET\\MainApplication\\SensorData.cs",
-              "RelativeDocumentMoniker": "MainApplication\\SensorData.cs",
-              "ToolTip": "C:\\Users\\ginko\\OneDrive\\Pulpit\\Programowanko\\studia\\semestr 7\\net\\SerwisyInternetowe.NET\\MainApplication\\SensorData.cs",
-              "RelativeToolTip": "MainApplication\\SensorData.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-01T13:10:09.528Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "MqttMongoService.cs",
-              "DocumentMoniker": "C:\\Users\\ginko\\OneDrive\\Pulpit\\Programowanko\\studia\\semestr 7\\net\\SerwisyInternetowe.NET\\MainApplication\\MqttMongoService.cs",
-              "RelativeDocumentMoniker": "MainApplication\\MqttMongoService.cs",
-              "ToolTip": "C:\\Users\\ginko\\OneDrive\\Pulpit\\Programowanko\\studia\\semestr 7\\net\\SerwisyInternetowe.NET\\MainApplication\\MqttMongoService.cs",
-              "RelativeToolTip": "MainApplication\\MqttMongoService.cs",
-              "ViewState": "AgIAADQAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-01T13:09:50.944Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\ginko\\OneDrive\\Pulpit\\Programowanko\\studia\\semestr 7\\net\\SerwisyInternetowe.NET\\MainApplication\\Pages\\Index.cshtml",
-              "RelativeDocumentMoniker": "MainApplication\\Pages\\Index.cshtml",
-              "ToolTip": "C:\\Users\\ginko\\OneDrive\\Pulpit\\Programowanko\\studia\\semestr 7\\net\\SerwisyInternetowe.NET\\MainApplication\\Pages\\Index.cshtml",
-              "RelativeToolTip": "MainApplication\\Pages\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEcAAAAwAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-12-01T12:43:35.258Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Index.cshtml.cs",
-              "DocumentMoniker": "C:\\Users\\ginko\\OneDrive\\Pulpit\\Programowanko\\studia\\semestr 7\\net\\SerwisyInternetowe.NET\\MainApplication\\Pages\\Index.cshtml.cs",
-              "RelativeDocumentMoniker": "MainApplication\\Pages\\Index.cshtml.cs",
-              "ToolTip": "C:\\Users\\ginko\\OneDrive\\Pulpit\\Programowanko\\studia\\semestr 7\\net\\SerwisyInternetowe.NET\\MainApplication\\Pages\\Index.cshtml.cs",
-              "RelativeToolTip": "MainApplication\\Pages\\Index.cshtml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-01T12:43:56.619Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "SensorData.cshtml",
-              "DocumentMoniker": "C:\\Users\\ginko\\OneDrive\\Pulpit\\Programowanko\\studia\\semestr 7\\net\\SerwisyInternetowe.NET\\MainApplication\\Pages\\SensorData.cshtml",
-              "RelativeDocumentMoniker": "MainApplication\\Pages\\SensorData.cshtml",
-              "ToolTip": "C:\\Users\\ginko\\OneDrive\\Pulpit\\Programowanko\\studia\\semestr 7\\net\\SerwisyInternetowe.NET\\MainApplication\\Pages\\SensorData.cshtml",
-              "RelativeToolTip": "MainApplication\\Pages\\SensorData.cshtml",
+              "DocumentIndex": 0,
+              "Title": "TokenBalances.cshtml",
+              "DocumentMoniker": "C:\\Users\\ginko\\OneDrive\\Pulpit\\Programowanko\\studia\\semestr 7\\net\\SerwisyInternetowe.NET\\MainApplication\\Pages\\TokenBalances.cshtml",
+              "RelativeDocumentMoniker": "MainApplication\\Pages\\TokenBalances.cshtml",
+              "ToolTip": "C:\\Users\\ginko\\OneDrive\\Pulpit\\Programowanko\\studia\\semestr 7\\net\\SerwisyInternetowe.NET\\MainApplication\\Pages\\TokenBalances.cshtml",
+              "RelativeToolTip": "MainApplication\\Pages\\TokenBalances.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-12-01T12:58:21.606Z",
+              "WhenOpened": "2025-12-01T19:06:34.511Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "TokenBalances.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\ginko\\OneDrive\\Pulpit\\Programowanko\\studia\\semestr 7\\net\\SerwisyInternetowe.NET\\MainApplication\\Pages\\TokenBalances.cshtml.cs",
+              "RelativeDocumentMoniker": "MainApplication\\Pages\\TokenBalances.cshtml.cs",
+              "ToolTip": "C:\\Users\\ginko\\OneDrive\\Pulpit\\Programowanko\\studia\\semestr 7\\net\\SerwisyInternetowe.NET\\MainApplication\\Pages\\TokenBalances.cshtml.cs",
+              "RelativeToolTip": "MainApplication\\Pages\\TokenBalances.cshtml.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAxwCAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-01T19:06:13.219Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "BlockchainController.cs",
+              "DocumentMoniker": "C:\\Users\\ginko\\OneDrive\\Pulpit\\Programowanko\\studia\\semestr 7\\net\\SerwisyInternetowe.NET\\MainApplication\\BlockchainController.cs",
+              "RelativeDocumentMoniker": "MainApplication\\BlockchainController.cs",
+              "ToolTip": "C:\\Users\\ginko\\OneDrive\\Pulpit\\Programowanko\\studia\\semestr 7\\net\\SerwisyInternetowe.NET\\MainApplication\\BlockchainController.cs*",
+              "RelativeToolTip": "MainApplication\\BlockchainController.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-01T19:05:39.722Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "BlockchainRewardService.cs",
+              "DocumentMoniker": "C:\\Users\\ginko\\OneDrive\\Pulpit\\Programowanko\\studia\\semestr 7\\net\\SerwisyInternetowe.NET\\MainApplication\\Blockchain\\BlockchainRewardService.cs",
+              "RelativeDocumentMoniker": "MainApplication\\Blockchain\\BlockchainRewardService.cs",
+              "ToolTip": "C:\\Users\\ginko\\OneDrive\\Pulpit\\Programowanko\\studia\\semestr 7\\net\\SerwisyInternetowe.NET\\MainApplication\\Blockchain\\BlockchainRewardService.cs*",
+              "RelativeToolTip": "MainApplication\\Blockchain\\BlockchainRewardService.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-01T18:59:43.968Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "IBlockchainRewardService.cs",
+              "DocumentMoniker": "C:\\Users\\ginko\\OneDrive\\Pulpit\\Programowanko\\studia\\semestr 7\\net\\SerwisyInternetowe.NET\\MainApplication\\Blockchain\\IBlockchainRewardService.cs",
+              "RelativeDocumentMoniker": "MainApplication\\Blockchain\\IBlockchainRewardService.cs",
+              "ToolTip": "C:\\Users\\ginko\\OneDrive\\Pulpit\\Programowanko\\studia\\semestr 7\\net\\SerwisyInternetowe.NET\\MainApplication\\Blockchain\\IBlockchainRewardService.cs",
+              "RelativeToolTip": "MainApplication\\Blockchain\\IBlockchainRewardService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-01T18:59:22.989Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "SensorTokenBalanceDto.cs",
+              "DocumentMoniker": "C:\\Users\\ginko\\OneDrive\\Pulpit\\Programowanko\\studia\\semestr 7\\net\\SerwisyInternetowe.NET\\MainApplication\\Blockchain\\SensorTokenBalanceDto.cs",
+              "RelativeDocumentMoniker": "MainApplication\\Blockchain\\SensorTokenBalanceDto.cs",
+              "ToolTip": "C:\\Users\\ginko\\OneDrive\\Pulpit\\Programowanko\\studia\\semestr 7\\net\\SerwisyInternetowe.NET\\MainApplication\\Blockchain\\SensorTokenBalanceDto.cs*",
+              "RelativeToolTip": "MainApplication\\Blockchain\\SensorTokenBalanceDto.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-01T18:59:01.239Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "SensorDataController.cs",
               "DocumentMoniker": "C:\\Users\\ginko\\OneDrive\\Pulpit\\Programowanko\\studia\\semestr 7\\net\\SerwisyInternetowe.NET\\MainApplication\\SensorDataController.cs",
               "RelativeDocumentMoniker": "MainApplication\\SensorDataController.cs",
@@ -164,20 +213,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "SensorDataService.cs",
-              "DocumentMoniker": "C:\\Users\\ginko\\OneDrive\\Pulpit\\Programowanko\\studia\\semestr 7\\net\\SerwisyInternetowe.NET\\MainApplication\\SensorDataService.cs",
-              "RelativeDocumentMoniker": "MainApplication\\SensorDataService.cs",
-              "ToolTip": "C:\\Users\\ginko\\OneDrive\\Pulpit\\Programowanko\\studia\\semestr 7\\net\\SerwisyInternetowe.NET\\MainApplication\\SensorDataService.cs",
-              "RelativeToolTip": "MainApplication\\SensorDataService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAFAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\ginko\\OneDrive\\Pulpit\\Programowanko\\studia\\semestr 7\\net\\SerwisyInternetowe.NET\\MainApplication\\Program.cs",
+              "RelativeDocumentMoniker": "MainApplication\\Program.cs",
+              "ToolTip": "C:\\Users\\ginko\\OneDrive\\Pulpit\\Programowanko\\studia\\semestr 7\\net\\SerwisyInternetowe.NET\\MainApplication\\Program.cs",
+              "RelativeToolTip": "MainApplication\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAA1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-01T12:39:26.47Z",
+              "WhenOpened": "2025-12-01T12:00:53.702Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 4,
+              "Title": "MqttMongoService.cs",
+              "DocumentMoniker": "C:\\Users\\ginko\\OneDrive\\Pulpit\\Programowanko\\studia\\semestr 7\\net\\SerwisyInternetowe.NET\\MainApplication\\MqttMongoService.cs",
+              "RelativeDocumentMoniker": "MainApplication\\MqttMongoService.cs",
+              "ToolTip": "C:\\Users\\ginko\\OneDrive\\Pulpit\\Programowanko\\studia\\semestr 7\\net\\SerwisyInternetowe.NET\\MainApplication\\MqttMongoService.cs",
+              "RelativeToolTip": "MainApplication\\MqttMongoService.cs",
+              "ViewState": "AgIAADMAAAAAAAAAAADwv00AAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-01T13:09:50.944Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
               "Title": "SensorDashboardDto.cs",
               "DocumentMoniker": "C:\\Users\\ginko\\OneDrive\\Pulpit\\Programowanko\\studia\\semestr 7\\net\\SerwisyInternetowe.NET\\MainApplication\\Models\\SensorDashboardDto.cs",
               "RelativeDocumentMoniker": "MainApplication\\Models\\SensorDashboardDto.cs",
@@ -190,111 +252,149 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "SensorsController.cs",
-              "DocumentMoniker": "C:\\Users\\ginko\\OneDrive\\Pulpit\\Programowanko\\studia\\semestr 7\\net\\SerwisyInternetowe.NET\\DataGenerator\\SensorsController.cs",
-              "RelativeDocumentMoniker": "DataGenerator\\SensorsController.cs",
-              "ToolTip": "C:\\Users\\ginko\\OneDrive\\Pulpit\\Programowanko\\studia\\semestr 7\\net\\SerwisyInternetowe.NET\\DataGenerator\\SensorsController.cs",
-              "RelativeToolTip": "DataGenerator\\SensorsController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-01T13:08:57.732Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 11,
-              "Title": "Sensor.cs",
-              "DocumentMoniker": "C:\\Users\\ginko\\OneDrive\\Pulpit\\Programowanko\\studia\\semestr 7\\net\\SerwisyInternetowe.NET\\DataGenerator\\Sensor.cs",
-              "RelativeDocumentMoniker": "DataGenerator\\Sensor.cs",
-              "ToolTip": "C:\\Users\\ginko\\OneDrive\\Pulpit\\Programowanko\\studia\\semestr 7\\net\\SerwisyInternetowe.NET\\DataGenerator\\Sensor.cs",
-              "RelativeToolTip": "DataGenerator\\Sensor.cs",
+              "Title": "SensorData.cs",
+              "DocumentMoniker": "C:\\Users\\ginko\\OneDrive\\Pulpit\\Programowanko\\studia\\semestr 7\\net\\SerwisyInternetowe.NET\\MainApplication\\SensorData.cs",
+              "RelativeDocumentMoniker": "MainApplication\\SensorData.cs",
+              "ToolTip": "C:\\Users\\ginko\\OneDrive\\Pulpit\\Programowanko\\studia\\semestr 7\\net\\SerwisyInternetowe.NET\\MainApplication\\SensorData.cs",
+              "RelativeToolTip": "MainApplication\\SensorData.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-01T13:08:55.549Z",
+              "WhenOpened": "2025-12-01T13:10:09.528Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\ginko\\OneDrive\\Pulpit\\Programowanko\\studia\\semestr 7\\net\\SerwisyInternetowe.NET\\MainApplication\\Program.cs",
-              "RelativeDocumentMoniker": "MainApplication\\Program.cs",
-              "ToolTip": "C:\\Users\\ginko\\OneDrive\\Pulpit\\Programowanko\\studia\\semestr 7\\net\\SerwisyInternetowe.NET\\MainApplication\\Program.cs",
-              "RelativeToolTip": "MainApplication\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAsAAAAAAAAAA==",
+              "DocumentIndex": 9,
+              "Title": "SensorDataService.cs",
+              "DocumentMoniker": "C:\\Users\\ginko\\OneDrive\\Pulpit\\Programowanko\\studia\\semestr 7\\net\\SerwisyInternetowe.NET\\MainApplication\\SensorDataService.cs",
+              "RelativeDocumentMoniker": "MainApplication\\SensorDataService.cs",
+              "ToolTip": "C:\\Users\\ginko\\OneDrive\\Pulpit\\Programowanko\\studia\\semestr 7\\net\\SerwisyInternetowe.NET\\MainApplication\\SensorDataService.cs",
+              "RelativeToolTip": "MainApplication\\SensorDataService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAA3AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-01T12:00:53.702Z",
+              "WhenOpened": "2025-12-01T12:39:26.47Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "MainApplication.csproj",
+              "DocumentMoniker": "C:\\Users\\ginko\\OneDrive\\Pulpit\\Programowanko\\studia\\semestr 7\\net\\SerwisyInternetowe.NET\\MainApplication\\MainApplication.csproj",
+              "RelativeDocumentMoniker": "MainApplication\\MainApplication.csproj",
+              "ToolTip": "C:\\Users\\ginko\\OneDrive\\Pulpit\\Programowanko\\studia\\semestr 7\\net\\SerwisyInternetowe.NET\\MainApplication\\MainApplication.csproj*",
+              "RelativeToolTip": "MainApplication\\MainApplication.csproj*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAABAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-12-01T12:37:52.178Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 13,
-              "Title": "MqttService.cs",
-              "DocumentMoniker": "C:\\Users\\ginko\\OneDrive\\Pulpit\\Programowanko\\studia\\semestr 7\\net\\SerwisyInternetowe.NET\\DataGenerator\\MqttService.cs",
-              "RelativeDocumentMoniker": "DataGenerator\\MqttService.cs",
-              "ToolTip": "C:\\Users\\ginko\\OneDrive\\Pulpit\\Programowanko\\studia\\semestr 7\\net\\SerwisyInternetowe.NET\\DataGenerator\\MqttService.cs",
-              "RelativeToolTip": "DataGenerator\\MqttService.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAYwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-01T13:08:49.55Z",
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\ginko\\OneDrive\\Pulpit\\Programowanko\\studia\\semestr 7\\net\\SerwisyInternetowe.NET\\MainApplication\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "MainApplication\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\ginko\\OneDrive\\Pulpit\\Programowanko\\studia\\semestr 7\\net\\SerwisyInternetowe.NET\\MainApplication\\Properties\\launchSettings.json",
+              "RelativeToolTip": "MainApplication\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-12-01T18:56:39.443Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Dockerfile",
-              "DocumentMoniker": "C:\\Users\\ginko\\OneDrive\\Pulpit\\Programowanko\\studia\\semestr 7\\net\\SerwisyInternetowe.NET\\MainApplication\\Dockerfile",
-              "RelativeDocumentMoniker": "MainApplication\\Dockerfile",
-              "ToolTip": "C:\\Users\\ginko\\OneDrive\\Pulpit\\Programowanko\\studia\\semestr 7\\net\\SerwisyInternetowe.NET\\MainApplication\\Dockerfile",
-              "RelativeToolTip": "MainApplication\\Dockerfile",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAArAAAAAAAAAA==",
+              "DocumentIndex": 14,
+              "Title": "SensorToken.sol",
+              "DocumentMoniker": "C:\\Users\\ginko\\OneDrive\\Pulpit\\Programowanko\\studia\\semestr 7\\net\\SerwisyInternetowe.NET\\SensorToken.sol",
+              "RelativeDocumentMoniker": "SensorToken.sol",
+              "ToolTip": "C:\\Users\\ginko\\OneDrive\\Pulpit\\Programowanko\\studia\\semestr 7\\net\\SerwisyInternetowe.NET\\SensorToken.sol",
+              "RelativeToolTip": "SensorToken.sol",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-12-01T12:05:06.683Z",
+              "WhenOpened": "2025-12-01T18:55:49.052Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 18,
+              "Title": "Sensor.cs",
+              "DocumentMoniker": "C:\\Users\\ginko\\OneDrive\\Pulpit\\Programowanko\\studia\\semestr 7\\net\\SerwisyInternetowe.NET\\DataGenerator\\Sensor.cs",
+              "RelativeDocumentMoniker": "DataGenerator\\Sensor.cs",
+              "ToolTip": "C:\\Users\\ginko\\OneDrive\\Pulpit\\Programowanko\\studia\\semestr 7\\net\\SerwisyInternetowe.NET\\DataGenerator\\Sensor.cs",
+              "RelativeToolTip": "DataGenerator\\Sensor.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAkwC0AAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-01T13:08:55.549Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "SensorData.cshtml",
+              "DocumentMoniker": "C:\\Users\\ginko\\OneDrive\\Pulpit\\Programowanko\\studia\\semestr 7\\net\\SerwisyInternetowe.NET\\MainApplication\\Pages\\SensorData.cshtml",
+              "RelativeDocumentMoniker": "MainApplication\\Pages\\SensorData.cshtml",
+              "ToolTip": "C:\\Users\\ginko\\OneDrive\\Pulpit\\Programowanko\\studia\\semestr 7\\net\\SerwisyInternetowe.NET\\MainApplication\\Pages\\SensorData.cshtml",
+              "RelativeToolTip": "MainApplication\\Pages\\SensorData.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-01T12:58:21.606Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Index.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\ginko\\OneDrive\\Pulpit\\Programowanko\\studia\\semestr 7\\net\\SerwisyInternetowe.NET\\MainApplication\\Pages\\Index.cshtml.cs",
+              "RelativeDocumentMoniker": "MainApplication\\Pages\\Index.cshtml.cs",
+              "ToolTip": "C:\\Users\\ginko\\OneDrive\\Pulpit\\Programowanko\\studia\\semestr 7\\net\\SerwisyInternetowe.NET\\MainApplication\\Pages\\Index.cshtml.cs",
+              "RelativeToolTip": "MainApplication\\Pages\\Index.cshtml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-01T12:43:56.619Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "SensorGenerationSettings.cs",
+              "DocumentMoniker": "C:\\Users\\ginko\\OneDrive\\Pulpit\\Programowanko\\studia\\semestr 7\\net\\SerwisyInternetowe.NET\\DataGenerator\\SensorGenerationSettings.cs",
+              "RelativeDocumentMoniker": "DataGenerator\\SensorGenerationSettings.cs",
+              "ToolTip": "C:\\Users\\ginko\\OneDrive\\Pulpit\\Programowanko\\studia\\semestr 7\\net\\SerwisyInternetowe.NET\\DataGenerator\\SensorGenerationSettings.cs",
+              "RelativeToolTip": "DataGenerator\\SensorGenerationSettings.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-01T18:34:30.503Z"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\ginko\\OneDrive\\Pulpit\\Programowanko\\studia\\semestr 7\\net\\SerwisyInternetowe.NET\\DataGenerator\\Program.cs",
+              "RelativeDocumentMoniker": "DataGenerator\\Program.cs",
+              "ToolTip": "C:\\Users\\ginko\\OneDrive\\Pulpit\\Programowanko\\studia\\semestr 7\\net\\SerwisyInternetowe.NET\\DataGenerator\\Program.cs",
+              "RelativeToolTip": "DataGenerator\\Program.cs",
+              "ViewState": "AgIAADIAAAAAAAAAAAAAwAkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-01T12:03:19.248Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
               "Title": "docker-compose.yml",
               "DocumentMoniker": "C:\\Users\\ginko\\OneDrive\\Pulpit\\Programowanko\\studia\\semestr 7\\net\\SerwisyInternetowe.NET\\docker-compose.yml",
               "RelativeDocumentMoniker": "docker-compose.yml",
               "ToolTip": "C:\\Users\\ginko\\OneDrive\\Pulpit\\Programowanko\\studia\\semestr 7\\net\\SerwisyInternetowe.NET\\docker-compose.yml",
               "RelativeToolTip": "docker-compose.yml",
-              "ViewState": "AgIAABUAAAAAAAAAAAAAAC0AAAAXAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003775|",
               "WhenOpened": "2025-12-01T12:07:29.292Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "mosquitto.conf",
-              "DocumentMoniker": "C:\\Users\\ginko\\OneDrive\\Pulpit\\Programowanko\\studia\\semestr 7\\net\\SerwisyInternetowe.NET\\mosquitto.conf",
-              "RelativeDocumentMoniker": "mosquitto.conf",
-              "ToolTip": "C:\\Users\\ginko\\OneDrive\\Pulpit\\Programowanko\\studia\\semestr 7\\net\\SerwisyInternetowe.NET\\mosquitto.conf",
-              "RelativeToolTip": "mosquitto.conf",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-12-01T12:06:38.53Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\ginko\\OneDrive\\Pulpit\\Programowanko\\studia\\semestr 7\\net\\SerwisyInternetowe.NET\\DataGenerator\\Program.cs",
-              "RelativeDocumentMoniker": "DataGenerator\\Program.cs",
-              "ToolTip": "C:\\Users\\ginko\\OneDrive\\Pulpit\\Programowanko\\studia\\semestr 7\\net\\SerwisyInternetowe.NET\\DataGenerator\\Program.cs",
-              "RelativeToolTip": "DataGenerator\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-01T12:03:19.248Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 16,
               "Title": "Dockerfile",
               "DocumentMoniker": "C:\\Users\\ginko\\OneDrive\\Pulpit\\Programowanko\\studia\\semestr 7\\net\\SerwisyInternetowe.NET\\DataGenerator\\Dockerfile",
               "RelativeDocumentMoniker": "DataGenerator\\Dockerfile",
@@ -302,25 +402,67 @@
               "RelativeToolTip": "DataGenerator\\Dockerfile",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-12-01T12:05:44.512Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-01T12:05:44.512Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "MainApplication",
-              "DocumentMoniker": "C:\\Users\\ginko\\OneDrive\\Pulpit\\Programowanko\\studia\\semestr 7\\net\\SerwisyInternetowe.NET\\MainApplication\\MainApplication.csproj",
-              "RelativeDocumentMoniker": "MainApplication\\MainApplication.csproj",
-              "ToolTip": "C:\\Users\\ginko\\OneDrive\\Pulpit\\Programowanko\\studia\\semestr 7\\net\\SerwisyInternetowe.NET\\MainApplication\\MainApplication.csproj",
-              "RelativeToolTip": "MainApplication\\MainApplication.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-12-01T12:37:52.178Z",
-              "EditorCaption": ""
+              "DocumentIndex": 23,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\ginko\\OneDrive\\Pulpit\\Programowanko\\studia\\semestr 7\\net\\SerwisyInternetowe.NET\\MainApplication\\Pages\\Index.cshtml",
+              "RelativeDocumentMoniker": "MainApplication\\Pages\\Index.cshtml",
+              "ToolTip": "C:\\Users\\ginko\\OneDrive\\Pulpit\\Programowanko\\studia\\semestr 7\\net\\SerwisyInternetowe.NET\\MainApplication\\Pages\\Index.cshtml",
+              "RelativeToolTip": "MainApplication\\Pages\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEcAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-01T12:43:35.258Z"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "SensorsController.cs",
+              "DocumentMoniker": "C:\\Users\\ginko\\OneDrive\\Pulpit\\Programowanko\\studia\\semestr 7\\net\\SerwisyInternetowe.NET\\DataGenerator\\SensorsController.cs",
+              "RelativeDocumentMoniker": "DataGenerator\\SensorsController.cs",
+              "ToolTip": "C:\\Users\\ginko\\OneDrive\\Pulpit\\Programowanko\\studia\\semestr 7\\net\\SerwisyInternetowe.NET\\DataGenerator\\SensorsController.cs",
+              "RelativeToolTip": "DataGenerator\\SensorsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-01T13:08:57.732Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "MqttService.cs",
+              "DocumentMoniker": "C:\\Users\\ginko\\OneDrive\\Pulpit\\Programowanko\\studia\\semestr 7\\net\\SerwisyInternetowe.NET\\DataGenerator\\MqttService.cs",
+              "RelativeDocumentMoniker": "DataGenerator\\MqttService.cs",
+              "ToolTip": "C:\\Users\\ginko\\OneDrive\\Pulpit\\Programowanko\\studia\\semestr 7\\net\\SerwisyInternetowe.NET\\DataGenerator\\MqttService.cs",
+              "RelativeToolTip": "DataGenerator\\MqttService.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAYwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-01T13:08:49.55Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Dockerfile",
+              "DocumentMoniker": "C:\\Users\\ginko\\OneDrive\\Pulpit\\Programowanko\\studia\\semestr 7\\net\\SerwisyInternetowe.NET\\MainApplication\\Dockerfile",
+              "RelativeDocumentMoniker": "MainApplication\\Dockerfile",
+              "ToolTip": "C:\\Users\\ginko\\OneDrive\\Pulpit\\Programowanko\\studia\\semestr 7\\net\\SerwisyInternetowe.NET\\MainApplication\\Dockerfile",
+              "RelativeToolTip": "MainApplication\\Dockerfile",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-12-01T12:05:06.683Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "mosquitto.conf",
+              "DocumentMoniker": "C:\\Users\\ginko\\OneDrive\\Pulpit\\Programowanko\\studia\\semestr 7\\net\\SerwisyInternetowe.NET\\mosquitto.conf",
+              "RelativeDocumentMoniker": "mosquitto.conf",
+              "ToolTip": "C:\\Users\\ginko\\OneDrive\\Pulpit\\Programowanko\\studia\\semestr 7\\net\\SerwisyInternetowe.NET\\mosquitto.conf",
+              "RelativeToolTip": "mosquitto.conf",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-12-01T12:06:38.53Z"
             }
           ]
         }

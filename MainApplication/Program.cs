@@ -1,4 +1,5 @@
 ﻿using MainApplication;
+using MainApplication.Blockchain;
 using MongoDB.Driver;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -10,20 +11,23 @@ var mongoConnectionString = builder.Configuration["Mongo:ConnectionString"] ?? "
 var mongoDbName = builder.Configuration["Mongo:Database"] ?? "sensorsDb";
 var mongoCollectionName = builder.Configuration["Mongo:Collection"] ?? "readings";
 
-builder.Services.AddSingleton<MqttMongoService>(_ => new MqttMongoService(
-    mqttHost: mqttHost,
-    mqttPort: mqttPort,
-    mongoConnectionString: mongoConnectionString,
-    mongoDbName: mongoDbName,
-    mongoCollectionName: mongoCollectionName
-));
-
+builder.Services.AddSingleton<IBlockchainRewardService, BlockchainRewardService>();
+builder.Services.AddSingleton<MqttMongoService>(sp =>
+{
+    var rewardService = sp.GetRequiredService<IBlockchainRewardService>();
+    return new MqttMongoService(
+        mqttHost,
+        mqttPort,
+        mongoConnectionString,
+        mongoDbName,
+        mongoCollectionName,
+        rewardService);
+});
 builder.Services.AddHttpClient("ApiClient", client =>
 {
     var baseUrl = builder.Configuration["Backend:BaseUrl"] ?? "http://localhost:5000/";
     client.BaseAddress = new Uri(baseUrl);
 });
-
 builder.Services.AddSingleton<ISensorDataService>(sp =>
 {
     var mongoClient = new MongoClient(mongoConnectionString);
@@ -32,20 +36,22 @@ builder.Services.AddSingleton<ISensorDataService>(sp =>
     return new SensorDataService(collection);
 });
 
+
+
 builder.Services.AddControllers();
 builder.Services.AddRazorPages();
 
 builder.WebHost.UseUrls("http://0.0.0.0:5000");
 
 var app = builder.Build();
-
 var mqttService = app.Services.GetRequiredService<MqttMongoService>();
 await mqttService.StartAsync();
+
+
 
 app.UseRouting();
 
 app.MapRazorPages();
 app.MapControllers();
 
-app.Run();
 app.Run();
