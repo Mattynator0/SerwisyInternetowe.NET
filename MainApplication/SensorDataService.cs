@@ -12,34 +12,34 @@ public interface ISensorDataService
 
 public class SensorDataService : ISensorDataService
 {
-    private readonly IMongoCollection<SensorData> _collection;
+    private readonly IMongoCollection<SensorData> _sensorDataCollection;
 
-    public SensorDataService(IMongoCollection<SensorData> collection)
+    public SensorDataService(IMongoCollection<SensorData> sensorDataCollection)
     {
-        _collection = collection;
+        _sensorDataCollection = sensorDataCollection;
     }
 
     public async Task<List<SensorData>> GetByTypeAsync(string type)
     {
         if (string.IsNullOrEmpty(type))
-            return await _collection.Find(x => true).ToListAsync();
+            return await _sensorDataCollection.Find(x => true).ToListAsync();
             
         var filter = Builders<SensorData>.Filter.Eq(s => s.Type, type);
-        return await _collection.Find(filter).ToListAsync();
+        return await _sensorDataCollection.Find(filter).ToListAsync();
     }
 
     public async Task<List<SensorDashboardDto>> GetDashboardAsync()
     {
         var result = new List<SensorDashboardDto>();
 
-        var sensorIds = await _collection.Distinct<string>("SensorId", FilterDefinition<SensorData>.Empty).ToListAsync();
+        var sensorIds = await _sensorDataCollection.Distinct<string>("SensorId", FilterDefinition<SensorData>.Empty).ToListAsync();
 
         foreach (var sensorId in sensorIds)
         {
             var filter = Builders<SensorData>.Filter.Eq(s => s.SensorId, sensorId);
             var sort = Builders<SensorData>.Sort.Descending(s => s.Timestamp);
 
-            var last100 = await _collection
+            var last100 = await _sensorDataCollection
                 .Find(filter)
                 .Sort(sort)
                 .Limit(100)
