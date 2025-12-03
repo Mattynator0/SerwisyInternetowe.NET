@@ -1,0 +1,29 @@
+﻿@page
+@model MainApplication.Pages.TokenBalancesModel
+@{
+    ViewData["Title"] = "Tokeny sensorów";
+}
+
+<h1>Tokeny sensorów (ERC-20)</h1>
+
+<p>Aktualne stany posiadania tokenów dla każdego sensora (na podstawie smart contractu ERC-20).</p>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Sensor ID</th>
+            <th>Adres portfela</th>
+            <th>Stan tokenów</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var b in Model.Balances)
+        {
+            <tr>
+                <td>@b.SensorId</td>
+                <td>@b.WalletAddress</td>
+                <td>@b.Balance</td>
+            </tr>
+        }
+    </tbody>
+</table>
