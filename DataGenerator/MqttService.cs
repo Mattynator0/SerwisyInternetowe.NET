@@ -9,30 +9,37 @@ public class MqttService
 
     public MqttService()
     {
-        var factory = new MqttClientFactory();
-        _client = factory.CreateMqttClient();
+        var mqttClientFactory = new MqttClientFactory();
+        _client = mqttClientFactory.CreateMqttClient();
     }
 
-    public async Task ConnectAsync(string brokerHost, int brokerPort)
+    public async Task ConnectToMqttBrokerAsync(string brokerHost, int brokerPort)
     {
-        var options = new MqttClientOptionsBuilder()
-            .WithTcpServer(brokerHost, brokerPort)
-            .WithCleanSession()
-            .Build();
-        
+        MqttClientOptions options = BuildMqttClientOptions(brokerHost, brokerPort);
         await _client.ConnectAsync(options);
     }
     
-    public IMqttClient GetClient() => _client;
+    private static MqttClientOptions BuildMqttClientOptions(
+        string brokerHost, int brokerPort)
+    {
+        return new MqttClientOptionsBuilder()
+            .WithTcpServer(brokerHost, brokerPort)
+            .WithCleanSession()
+            .Build();
+    }
     
-    public async Task PublishSensorDataAsync(string topic, object data)
+    public async Task PublishSensorDataAsync(string mqttTopic, object data)
     {
         var jsonData = JsonSerializer.Serialize(data);
-        var message = new MqttApplicationMessageBuilder()
-            .WithTopic(topic)
+        var message = BuildMqttApplicationMessage(mqttTopic, jsonData);
+        await _client.PublishAsync(message);
+    }
+
+    private static MqttApplicationMessage BuildMqttApplicationMessage(string mqttTopic, string jsonData)
+    {
+        return new MqttApplicationMessageBuilder()
+            .WithTopic(mqttTopic)
             .WithPayload(jsonData)
             .Build();
-        
-        await _client.PublishAsync(message);
     }
 }
