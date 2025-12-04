@@ -59,7 +59,7 @@ public class SensorDataController : ControllerBase
         string filterTimestampBefore,
         string filterTimestampAfter)
     {
-        var data = await _sensorDataService.GetByTypeAsync(type);
+        var data = await _sensorDataService.GetBySensorTypeAsync(type);
         
         if (!string.IsNullOrEmpty(filterSensorId))
             data = data.Where(d => d.SensorId.Contains(filterSensorId, StringComparison.OrdinalIgnoreCase)).ToList();

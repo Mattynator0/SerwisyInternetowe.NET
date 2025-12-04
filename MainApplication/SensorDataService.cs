@@ -6,12 +6,13 @@ using System.Threading.Tasks;
 
 public interface ISensorDataService
 {
-    Task<List<SensorData>> GetByTypeAsync(string type);
+    Task<List<SensorData>> GetBySensorTypeAsync(string sensorType);
     Task<List<SensorDashboardDto>> GetDashboardAsync();
 }
 
 public class SensorDataService : ISensorDataService
 {
+    private const int DashboardReadingsSampleSize = 100;
     private readonly IMongoCollection<SensorData> _sensorDataCollection;
 
     public SensorDataService(IMongoCollection<SensorData> sensorDataCollection)
@@ -19,49 +20,76 @@ public class SensorDataService : ISensorDataService
         _sensorDataCollection = sensorDataCollection;
     }
 
-    public async Task<List<SensorData>> GetByTypeAsync(string type)
+    public Task<List<SensorData>> GetBySensorTypeAsync(string sensorType)
     {
-        if (string.IsNullOrEmpty(type))
-            return await _sensorDataCollection.Find(x => true).ToListAsync();
-            
-        var filter = Builders<SensorData>.Filter.Eq(s => s.Type, type);
-        return await _sensorDataCollection.Find(filter).ToListAsync();
+        var filter = BuildSensorTypeFilter(sensorType);
+        return _sensorDataCollection.Find(filter).ToListAsync();
     }
 
+    private static FilterDefinition<SensorData> BuildSensorTypeFilter(string sensorType)
+    {
+        return string.IsNullOrWhiteSpace(sensorType)
+            ? Builders<SensorData>.Filter.Empty
+            : Builders<SensorData>.Filter.Eq(s => s.Type, sensorType);
+    }
+    
     public async Task<List<SensorDashboardDto>> GetDashboardAsync()
     {
-        var result = new List<SensorDashboardDto>();
-
-        var sensorIds = await _sensorDataCollection.Distinct<string>("SensorId", FilterDefinition<SensorData>.Empty).ToListAsync();
+        var distinctSensorIds = await GetDistinctSensorIdsAsync();
+        return await BuildDashboardEntriesAsync(distinctSensorIds);
+    }
+    
+    private Task<List<string>> GetDistinctSensorIdsAsync()
+    {
+        return _sensorDataCollection
+            .Distinct<string>(nameof(SensorData.SensorId), FilterDefinition<SensorData>.Empty)
+            .ToListAsync();
+    }
+    
+    private async Task<List<SensorDashboardDto>> BuildDashboardEntriesAsync(IEnumerable<string> sensorIds)
+    {
+        var dashboardEntries = new List<SensorDashboardDto>();
 
         foreach (var sensorId in sensorIds)
         {
-            var filter = Builders<SensorData>.Filter.Eq(s => s.SensorId, sensorId);
-            var sort = Builders<SensorData>.Sort.Descending(s => s.Timestamp);
-
-            var last100 = await _sensorDataCollection
-                .Find(filter)
-                .Sort(sort)
-                .Limit(100)
-                .ToListAsync();
-
-            if (!last100.Any())
-                continue;
-
-            var latest = last100.First();
-
-            var dto = new SensorDashboardDto
+            var lastReadings = 
+                await GetNLastReadingsForSensorAsync(sensorId, DashboardReadingsSampleSize);
+            if (lastReadings.Count == 0)
             {
-                SensorId = sensorId,
-                Type = latest.Type,
-                LastValue = latest.Value,
-                LastTimestamp = latest.Timestamp,
-                AverageLast100 = last100.Average(x => x.Value)
-            };
+                continue;
+            }
 
-            result.Add(dto);
+            var entry = CreateDashboardEntry(sensorId, lastReadings);
+            dashboardEntries.Add(entry);
         }
 
-        return result;
+        return dashboardEntries;
+    }
+    
+    private Task<List<SensorData>> GetNLastReadingsForSensorAsync(string sensorId, int limit)
+    {
+        var filter = Builders<SensorData>.Filter.Eq(s => s.SensorId, sensorId);
+        var sort = Builders<SensorData>.Sort.Descending(s => s.Timestamp);
+
+        return _sensorDataCollection
+            .Find(filter)
+            .Sort(sort)
+            .Limit(limit)
+            .ToListAsync();
+    }
+
+    private static SensorDashboardDto CreateDashboardEntry(string sensorId, IReadOnlyList<SensorData> readings)
+    {
+        var latest = readings[0];
+        var averageValue = readings.Average(r => r.Value);
+
+        return new SensorDashboardDto
+        {
+            SensorId = sensorId,
+            Type = latest.Type,
+            LastValue = latest.Value,
+            LastTimestamp = latest.Timestamp,
+            AverageLast100 = averageValue
+        };
     }
 }
