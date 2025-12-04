@@ -55,9 +55,8 @@ public class SensorDataService : ISensorDataService
             var lastReadings = 
                 await GetNLastReadingsForSensorAsync(sensorId, DashboardReadingsSampleSize);
             if (lastReadings.Count == 0)
-            {
                 continue;
-            }
+            
 
             var entry = CreateDashboardEntry(sensorId, lastReadings);
             dashboardEntries.Add(entry);
