@@ -9,7 +9,7 @@ public class SensorsController(MqttService mqttService) : ControllerBase
     [HttpPost("manual")]
     public async Task<IActionResult> SendManualData([FromBody] SensorData inputSensorData)
     {
-        string mqttTopic = $"sensors/{inputSensorData.SensorType}";
+        string mqttTopic = $"sensors/{inputSensorData.Type}";
         await mqttService.PublishSensorDataAsync(
             mqttTopic, inputSensorData);
         return Ok("Manual sensor data sent.");
@@ -19,7 +19,7 @@ public class SensorsController(MqttService mqttService) : ControllerBase
 public class SensorData
 {
     public string SensorId { get; set; }
-    public string SensorType { get; set; }
+    public string Type { get; set; }
     public double Value { get; set; }
     public long Timestamp { get; set; }
 }
