@@ -1,6 +1,4 @@
-﻿using System.Collections.Generic;
-using System.Text.Json;
-using System.Threading.Tasks;
+﻿using System.Text.Json;
 using MainApplication.Blockchain;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 

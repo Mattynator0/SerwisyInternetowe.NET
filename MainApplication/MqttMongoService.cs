@@ -1,8 +1,6 @@
-﻿using System;
-using System.Buffers;
+﻿using System.Buffers;
 using System.Text;
 using System.Text.Json;
-using System.Threading.Tasks;
 using MQTTnet;
 using MongoDB.Driver;
 using MainApplication.Blockchain;

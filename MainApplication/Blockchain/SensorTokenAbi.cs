@@ -1,9 +1,5 @@
 ﻿namespace MainApplication.Blockchain;
 
-/// <summary>
-/// Minimalne ABI ERC-20 z funkcjami transfer i balanceOf.
-/// Jeśli Twój kontrakt ma inne funkcje/nazwy – podmień ABI na swoje.
-/// </summary>
 internal static class SensorTokenAbi
 {
     public const string Value = @"[

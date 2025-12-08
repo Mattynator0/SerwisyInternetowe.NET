@@ -11,5 +11,5 @@ public class SensorGenerationSettings
     public double Max { get; set; }
     public double MessagesPerMinute { get; set; }
     public int MeasurementPublishIntervalMs =>
-        MessagesPerMinute <= 0 ? 1000 : (int)(60000.0 / MessagesPerMinute);
+        MessagesPerMinute <= 0 ? 10 : (int)(60000.0 / MessagesPerMinute);
 }

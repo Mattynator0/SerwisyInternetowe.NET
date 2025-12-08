@@ -10,6 +10,8 @@ public class SensorsController(MqttService mqttService) : ControllerBase
     public async Task<IActionResult> SendManualData([FromBody] SensorData inputSensorData)
     {
         string mqttTopic = $"sensors/{inputSensorData.Type}";
+        if (inputSensorData.Timestamp == 0)
+            inputSensorData.Timestamp = DateTimeOffset.UtcNow.ToUnixTimeMilliseconds();
         await mqttService.PublishSensorDataAsync(
             mqttTopic, inputSensorData);
         return Ok("Manual sensor data sent.");
