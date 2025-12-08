@@ -40,6 +40,8 @@ services:
       context: .
       dockerfile: ./DataGenerator/Dockerfile
     container_name: datagenerator
+    ports:
+      - "5001:5001"
     depends_on:
       - mqtt
     environment:
