@@ -49,7 +49,7 @@ services:
       - Mqtt__Port=1883
       - Sensors__light__Min=0
       - Sensors__light__Max=1500
-      - Sensors__light__MessagesPerMinute=5
+      - Sensors__light__MessagesPerMinute=15
 
       - Sensors__temperature__Min=15
       - Sensors__temperature__Max=40
@@ -57,11 +57,11 @@ services:
 
       - Sensors__air-quality__Min=0
       - Sensors__air-quality__Max=300
-      - Sensors__air-quality__MessagesPerMinute=5
+      - Sensors__air-quality__MessagesPerMinute=10
 
       - Sensors__energy__Min=0
       - Sensors__energy__Max=5
-      - Sensors__energy__MessagesPerMinute=5
+      - Sensors__energy__MessagesPerMinute=7
 
 volumes:
   mongo_data:
