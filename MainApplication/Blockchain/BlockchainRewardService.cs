@@ -23,8 +23,7 @@ public class BlockchainRewardService : IBlockchainRewardService
     public BlockchainRewardService(IConfiguration configuration)
     {
         var section = configuration.GetSection("Blockchain");
-
-        // ZAWSZE wczytujemy listę sensorów – nawet jeśli blockchain jest wyłączony
+        
         var sensorsSection = section.GetSection("Sensors");
         _sensorWallets = sensorsSection.GetChildren()
             .Where(c => !string.IsNullOrWhiteSpace(c.Value))
@@ -38,7 +37,6 @@ public class BlockchainRewardService : IBlockchainRewardService
             string.IsNullOrWhiteSpace(privateKey) ||
             string.IsNullOrWhiteSpace(contractAddr))
         {
-            // brak pełnej konfiguracji – pracujemy w trybie DEMO (zero tokenów, ale wiersze są widoczne)
             _enabled = false;
             _rewardPerMessageWei = BigInteger.Zero;
             Console.WriteLine("[Blockchain] Module disabled – missing RpcUrl / OwnerPrivateKey / ContractAddress. Running in UI-only mode.");
@@ -66,7 +64,6 @@ public class BlockchainRewardService : IBlockchainRewardService
         if (!_sensorWallets.TryGetValue(sensorId, out var wallet) ||
             string.IsNullOrWhiteSpace(wallet))
         {
-            // brak zdefiniowanego portfela dla tego sensora – po prostu nic nie robimy
             return;
         }
 
@@ -76,8 +73,7 @@ public class BlockchainRewardService : IBlockchainRewardService
             var transferFunction = contract.GetFunction("transfer");
 
             HexBigInteger gasWithBuffer;
-
-            // 1. Spróbuj oszacować gas
+            
             try
             {
                 var estimatedGas = await transferFunction.EstimateGasAsync(
@@ -90,12 +86,10 @@ public class BlockchainRewardService : IBlockchainRewardService
             }
             catch (Exception ex)
             {
-                // Jeśli node nie pozwala na eth_estimateGas → używamy stałej wartości
                 Console.WriteLine($"[Blockchain] Gas estimation failed for {sensorId}: {ex.Message}. Using default gas 100000.");
                 gasWithBuffer = new HexBigInteger(100_000);
             }
-
-            // 2. Wyślij transakcję z limitem gazu
+            
             var txHash = await transferFunction.SendTransactionAsync(
                 from: _ownerAddress,
                 gas: gasWithBuffer,
@@ -114,11 +108,9 @@ public class BlockchainRewardService : IBlockchainRewardService
 
     public async Task<IReadOnlyList<SensorTokenBalanceDto>> GetBalancesAsync(CancellationToken ct = default)
     {
-        // Jeśli nie ma żadnych sensorów w konfiguracji – zwróć pustą listę
         if (_sensorWallets.Count == 0)
             return new List<SensorTokenBalanceDto>();
-
-        // TRYB DEMO: blockchain wyłączony -> zwracamy wiersze z zerowym stanem
+        
         if (!_enabled || _web3 == null)
         {
             return _sensorWallets
@@ -158,8 +150,7 @@ public class BlockchainRewardService : IBlockchainRewardService
                 catch (Exception ex)
                 {
                     Console.WriteLine($"[Blockchain] Error reading balance for {sensorId}: {ex.Message}");
-
-                    // fallback: pokaż wiersz, ale z balansem 0
+                    
                     result.Add(new SensorTokenBalanceDto
                     {
                         SensorId = sensorId,
@@ -172,8 +163,7 @@ public class BlockchainRewardService : IBlockchainRewardService
         catch (Exception ex)
         {
             Console.WriteLine($"[Blockchain] Error initializing contract for balances: {ex.Message}");
-
-            // totalny fallback: nawet kontrakt się nie utworzył -> lista sensorów z balansem 0
+            
             return _sensorWallets
                 .Select(kvp => new SensorTokenBalanceDto
                 {
